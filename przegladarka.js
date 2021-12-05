@@ -63,7 +63,7 @@
 
         //FOR LOOP, WHICH GENERATE RANDOM NUMBERS AND ADD IT TO SORTED ARRAYS
         for (let i = 1; i <= 20; i++) {
-            let randomNum = Math.floor(Math.random() * 99) + 1
+            let randomNum = Math.floor(Math.random() * 100 + 1)
             randomNum % 2 === 0 ? oddNumbers.push(randomNum) : evenNumbers.push(randomNum)
             oddNumbers.sort(sortArrays)
             evenNumbers.sort(sortArrays)
