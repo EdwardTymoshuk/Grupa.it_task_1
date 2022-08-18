@@ -24,7 +24,6 @@
     btn.style.color = 'beige'
     btn.style.backgroundColor = 'black'
 
-
     //append button to page
     bodyEl.append(btn)
 
@@ -61,14 +60,14 @@
         table.append(thead, tbody)
         bodyEl.append(table)
 
-        //FOR LOOP, WHICH GENERATE RANDOM NUMBERS AND ADD IT TO SORTED ARRAYS
+        //FOR LOOP, WHICH GENERATES RANDOM NUMBERS AND ADD IT TO SORTED ARRAYS
         for (let i = 1; i <= 20; i++) {
             let randomNum = Math.floor(Math.random() * 100 + 1)
             randomNum % 2 === 0 ? oddNumbers.push(randomNum) : evenNumbers.push(randomNum)
             oddNumbers.sort(sortArrays)
             evenNumbers.sort(sortArrays)
         }
-        //FOR LOOP, WHICH ADD NUMBERS TO TABLE
+        //FOR LOOP, WHICH ADDS NUMBERS TO THE TABLE
         for (let i = 0, j = 0; j < evenNumbers.length || i < oddNumbers.length; i++, j++) {
             let row = document.createElement('tr')
             let td1 = document.createElement('td')
